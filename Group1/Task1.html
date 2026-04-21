@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+    /* code one will not work because the page isn't loaded yet so the fucktion can't reach the element 
+    code 2 will work because we are using the fuc "onload" which waites for the page to load then call the element
+    code 3 will also work*/
+  </body>
+</html>
